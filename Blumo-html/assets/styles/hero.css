@@ -1,12 +1,18 @@
 main{
     position: relative;
 }
+
+.principal{
+    position: absolute;
+    margin-top: 5rem;
+}
+
 .hero-1{
     position: relative;
     width: 100vw;
     height: 300px;
     border-bottom-right-radius: 40px;
-    z-index: 1;
+    z-index: 1
 }
 
 .hero-banner{
@@ -69,8 +75,6 @@ main{
     grid-row: 2;
     display: flex;
     justify-content: center;
-    
-
 }
 
 .empresa_text p{

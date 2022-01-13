@@ -6,7 +6,7 @@ header{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.535);
     display: flex;
     justify-content:space-between;
-    position: relative;
+    position:fixed;
     z-index: 3;
 }
 .logo{
