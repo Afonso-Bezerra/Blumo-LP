@@ -4,7 +4,7 @@ main{
 .hero-1{
     position: relative;
     width: 100vw;
-    height: 40vh;
+    height: 300px;
     border-bottom-right-radius: 40px;
     z-index: 1;
 }
@@ -29,10 +29,89 @@ main{
 
 .hero-banner-2{
     width: 100vw;
-    height: 60vh;
-    transform: translateY(-40px);
-    background-color: rgb(0, 0, 0);
+    height:320px;
+    transform: translateY(-5px);
 }
+
+.background-img{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 25% auto 1fr;
+    row-gap: 8px;
+    transform: scaleY(1.2);
+}
+.empresa{
+    align-self: flex-end;
+    grid-row: 1;
+    height: 27px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    background-color: #74FA92;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.empresa span {
+    font-family: 'Russo One', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    align-self: center;
+}
+
+.empresa_text{
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.empresa_text p{
+    width: 174px;
+    align-self: center;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;  
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 14px;
+    color: white;
+    text-shadow: 0px -1px 2px #000000;
+}
+
+.carro{
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.carro_text{
+    justify-self: center;
+    align-self: center;
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 87.5%;
+    color: #7CFE99;
+}
+
+.img_carro{
+    grid-column: 2;
+    background-image: url(../images/caro2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: translateY(-10px);
+}
+
 .owl-carousel{
     margin-top: 30px;
     z-index: 999;
