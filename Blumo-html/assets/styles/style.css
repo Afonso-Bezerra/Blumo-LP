@@ -1,4 +1,6 @@
-
+html{
+  scroll-behavior: smooth;
+}
 header{
     width:100vw;
     height:5rem;
@@ -7,7 +9,7 @@ header{
     display: flex;
     justify-content:space-between;
     position:fixed;
-    z-index: 3;
+    z-index: 4;
 }
 .logo{
     align-self: center;
@@ -124,7 +126,7 @@ header{
       visibility: hidden;
       opacity: 0;
       transition: all .5s;
-      z-index: 2;
+      z-index: 3;
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -177,6 +179,7 @@ header{
     bottom: 15px;
     right: 15px;
     z-index: 3;
+    transition: all 0.2s;
 }
  .button-whatsapp{
     width: 100%;
@@ -187,3 +190,4 @@ header{
     background-size: contain;
     box-shadow: 0 0 15px #00000093;
  }
+

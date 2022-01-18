@@ -7,16 +7,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="assets/styles/hero.css">
+    <link rel="stylesheet" href="assets/styles/ofertas.css">
     <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/local.css">
+    <link rel="stylesheet" href="assets/styles/footer.css">
+    <link rel="stylesheet" href="assets/styles/banners.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Blumo</title>
 </head>
 <body>
     
     <main class="main" id="main">
-        <div class="whatsapp-button-fixed"><div class="button-whatsapp"></div></div>
+        <div class="whatsapp-button-fixed" id="whatsapp-fixed"><div class="button-whatsapp"></div></div>
         <input type="checkbox" id="menucheck">
         <header>
             <div class="logo"><img src="assets/images/LOGO.webp" alt="LOGO"></div>
@@ -31,32 +36,48 @@
             <div class="option">
                 <ul class="nav-option">
                     <li class="nav-item">
-                        <a href="#">Empresa história</a>
+                        <a href="#hero-banner-2">Empresa história</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#">Serviços Depoimentos</a>
+                        <a href="#hero-3">Serviços Depoimentos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#">Ofertas</a>
+                        <a href="#ofertas">Ofertas</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#">Contato</a>
+                        <a href="#local">Contato</a>
                     </li>
                 </ul>
             </div>
 
             <section class="principal">
-                <section class="hero-1"><div class="hero-banner">
-            
+                <section class="hero-1">
+                    <div class="hero-banner">
+                    <div class="centraliza-banners">
                     <div class="owl-carousel owl-theme">
-                        <div class="item"><h4>1</h4></div>
-                        <div class="item"><h4>2</h4></div>
-                        <div class="item"><h4>3</h4></div>
+                        <div class="item"><div class="banner"><div class="conteudo"></div></div></div>
+                        <div class="item">
+                        <div class="banner grid">
+                            <div class="title"><span>Ofertas exclusivas troca<br/> de óleo a partir de</span></div>
+                            <div class="valor"><span>R$99,00</span>
+                            <p>(chamada institucional varejo)</p>
+                            </div>                      
+                        </div>
+                        </div>
+                        <div class="item"><div class="banner grid">
+                            <div class="title"><span>Segurança, conforto e<br/> atendimento de ponta.</span></div>
+                            <div class="linha2">
+                            <div class="subtitulo"><span>Borá<br/> embarcar <br/>nessa?</span> </div>
+                            <div class="img-banner"></div>
+                           
+                            </div> 
+                        </div></div>
                     </div>
+                </div>
                         </div><div class="overlay"></div>
                     </section>
 
-                        <section class="hero-banner-2">
+                        <section class="hero-banner-2" id="hero-banner-2">
                             <div class="background-img">
                                 <div class="empresa"><span>Empresa</span></div>
                                 <div class="empresa_text"><p>Somos a Blumo, uma empresa focada em Mecânica Automotiva. Uma oficina atenta aos detalhes, desde o atendimento, execução do processo, até o pós venda, empenhados em satisfazer a você cliente e entregar o trabalho de forma clara, objetiva e segura.</p></div>
@@ -70,7 +91,7 @@
                             </div>
                         </section>
 
-                    <section class="hero-3">
+                    <section class="hero-3" id="hero-3">
                         <div class="banner-3">
                             <div class="servico"><span>Serviços</span></div>
                               <div class="carro-servico">
@@ -84,11 +105,78 @@
                                   <a class="button_alinha"href="#"></a>
                               </div>
                         </div>
-
                     </section>
+
+                    <section class="depoimentos">
+                        <div class="depoimemtos-text"><span>Depoimentos</span></div>
+
+                        <div class="carrossel-depoimentos">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item"><h4>1</h4></div>
+                                <div class="item"><h4>2</h4></div>
+                                <div class="item"><h4>3</h4></div>
+                            </div>
+                        </div>
+
+                        <div class="container-img">
+                            <div class="img-depoimentos">
+                            </div>
+                        </div>
+                        <div class="ofertas" id="ofertas">
+                            <div class="carro-oferta"></div>
+                            <div class="ofertas-box">
+                                <div class="title-ofertas">OFERTAS</div>
+                                <div class="ofertas1">
+                                    <span>Troca de óleo <br/>para veículos 1.0</span>
+                                    <p>R$99,00</p>
+                                </div>
+                                <div class="ofertas2">
+                                    <span>Alinhamento <br/>balanceamento para <br/>veículos pequeno porte</span>
+                                    <p>R$109,00</p>
+                                </div>
+                                <div class="ofertas3">
+                                    <span>Pastilha de freio<br/>para modelos FIAT</span>
+                                    <p>R$120,00</p>
+                                </div>
+                                <div class="ofertas4">
+                                    <span>Troca de<br/>pneus</span>
+                                    <p>R$50,00</p>
+                                </div>
+                                <div class="ofertas5">
+                                    <span>Limpeza<br/> dos bicos</span>
+                                    <p>R$145,00</p>
+                                </div>
+                                <div class="ofertas6">
+                                    <span>Limpeza de<br/> ar condicionado </span>
+                                    <p>R$140,00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="whatsappbutton" id="button-retangulo">
+                            <div class="img-icon-whatsapp"></div>
+                            <div class="text-whats">CLIQUE AQUI E COMPRE ONLINE</div>
+                        </div>
+                    </section>
+                    <section class="local" id="local">
+                        <div class="neon">
+                            <div class="contato-container">
+                                <div class="img-contato" data-aos="fade-left"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="arrumando">
+                    <section class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.4230550777074!2d-47.49177928440756!3d-23.517281765852445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58b1e40ec5117%3A0xd8133bb9e74ee6ed!2sAv.%20Dr.%20Armando%20Pannunzio%2C%20435%20-%20Jardim%20Piazza%20Di%20Roma%2C%20Sorocaba%20-%20SP%2C%2018050-000!5e0!3m2!1spt-BR!2sbr!4v1642453587596!5m2!1spt-BR!2sbr" 
+                        style="border:0; width: 100%; height: 100%;border-top-left-radius: 40px; " allowfullscreen="" loading="lazy"></iframe>
+                    </section>
+                    <footer>
+                        <div class="footer"></div>
+                    </footer>
+                </div>
             </section>
     </main>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/script/inicio.js"></script>
