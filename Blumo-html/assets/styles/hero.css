@@ -40,6 +40,7 @@ main{
 
 }
 
+
 .background-img{
     position: relative;
     width: 100%;
@@ -122,6 +123,7 @@ main{
     z-index: 999;
 }
 
+
 .hero-3{
     transform: translateY(26px);
     width: 100vw;
@@ -131,11 +133,17 @@ main{
    
 }
 
+@media screen and (max-width:320px){
+    .hero-3{
+        transform: translateY(15px);  
+    }
+}
+
 .banner-3{
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url(../images/texture.png);
+    background-image: url(../images/texture.webp);
     background-size:cover;
     background-repeat: no-repeat;
     border-bottom-right-radius: 40px;
@@ -171,7 +179,7 @@ main{
 
 .carro-servico{
     grid-row: 2 / 4;
-    background-image: url(../images/Frame\ 3.png);
+    background-image: url(../images/Frame-3.webp);
     background-size: contain;
     background-repeat: no-repeat;
     background-position:top center;
@@ -301,7 +309,6 @@ main{
 }
 
 .depoimentos{
-   
     width: 100vw;
     height: 1130px;
     position: relative;
@@ -317,7 +324,7 @@ main{
     width: 100vw;
     height: 100%;
     opacity: 0.6;
-    background-image: url(../images/fundo\ depoimentos.png);
+    background-image: url(../images/fundo-depoimentos.webp);
     -webkit-box-shadow: inset 0px -200px 155px -22px rgba(36,2,36,1);
     -moz-box-shadow: inset 0px -200px 155px -22px rgba(36,2,36,1);
     box-shadow: inset 0px -200px 155px -22px rgba(36,2,36,1);
@@ -341,7 +348,7 @@ main{
     background-color: #74FA92;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    z-index: 2;
+    z-index: 3;
 }
 
 .depoimemtos-text span {
@@ -353,9 +360,10 @@ main{
     align-self: center;
 }
 
+
+
 .carrossel-depoimentos{
-    position: absolute;
-    margin-top: 170px;
+    margin-top: -500px;
 }
 
 .ofertas{
@@ -371,7 +379,7 @@ main{
 
 .carro-oferta{
     grid-column: 1;
-    background-image: url(../images/Frame\ 4.png);
+    background-image: url(../images/Frame-4.webp);
     align-content: flex-start;
     background-repeat: no-repeat;
 }
@@ -394,7 +402,7 @@ main{
 
 .img-icon-whatsapp{
     grid-column: 1;
-    background-image: url(../images/WhatsApp\ 2.png);
+    background-image: url(../images/WhatsApp-2.webp);
     background-repeat: no-repeat;
     background-position: center center ;
 }

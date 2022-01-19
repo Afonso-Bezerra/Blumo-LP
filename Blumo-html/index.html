@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/VenoBox-master/dist/venobox.min.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="assets/styles/hero.css">
     <link rel="stylesheet" href="assets/styles/ofertas.css">
@@ -12,14 +13,14 @@
     <link rel="stylesheet" href="assets/styles/local.css">
     <link rel="stylesheet" href="assets/styles/footer.css">
     <link rel="stylesheet" href="assets/styles/banners.css">
+    <link rel="stylesheet" href="assets/styles/modal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Blumo</title>
 </head>
 <body>
-    
     <main class="main" id="main">
         <div class="whatsapp-button-fixed" id="whatsapp-fixed"><div class="button-whatsapp"></div></div>
         <input type="checkbox" id="menucheck">
@@ -49,12 +50,12 @@
                     </li>
                 </ul>
             </div>
-
+            <section id="conteudo">
             <section class="principal">
                 <section class="hero-1">
                     <div class="hero-banner">
                     <div class="centraliza-banners">
-                    <div class="owl-carousel owl-theme">
+                    <div class="owl-carousel owl-theme" id="cassossel1">
                         <div class="item"><div class="banner"><div class="conteudo"></div></div></div>
                         <div class="item">
                         <div class="banner grid">
@@ -75,8 +76,8 @@
                     </div>
                 </div>
                         </div><div class="overlay"></div>
-                    </section>
-
+            </section>
+                   
                         <section class="hero-banner-2" id="hero-banner-2">
                             <div class="background-img">
                                 <div class="empresa"><span>Empresa</span></div>
@@ -95,33 +96,126 @@
                         <div class="banner-3">
                             <div class="servico"><span>Serviços</span></div>
                               <div class="carro-servico">
-                                  <a class="button_injecao" href="#"></a>
-                                  <a class="button_embreagem" href="#"></a>
-                                  <a class="button_montagem"href="#"></a>
-                                  <a class="button_escapamento"href="#"></a>
-                                  <a class="button_troca"href="#"></a>
-                                  <a class="button_suspencao"href="#"></a>
-                                  <a class="button_freio"href="#"></a>
-                                  <a class="button_alinha"href="#"></a>
+                                  <a class="button_injecao my-image-links" data-gall="gallery01" href="assets/images/injecao.webp"></a>
+                                  <a class="button_embreagem my-image-links" data-gall="gallery01" href="assets/images/Embreagem.webp"></a>
+                                  <a class="button_montagem my-image-links" data-gall="gallery01" href="assets/images/pneu.webp"></a>
+                                  <a class="button_escapamento my-image-links" data-gall="gallery01" href="assets/images/Escapamento.webp"></a>
+                                  <a class="button_troca my-image-links" data-gall="gallery01"  href="assets/images/Troca de oleo.webp"></a>
+                                  <a class="button_suspencao my-image-links" data-gall="gallery01" href="assets/images/suspencao.webp"></a>
+                                  <a class="button_freio my-image-links" data-gall="gallery01" href="assets/images/freio.webp"></a>
+                                  <a class="button_alinha my-image-links" data-gall="gallery01" href="assets/images/Alinhamento....webp"></a>
                               </div>
                         </div>
+                      
                     </section>
-
                     <section class="depoimentos">
                         <div class="depoimemtos-text"><span>Depoimentos</span></div>
-
+                    
+                    <div class="container-img">
+                            <div class="img-depoimentos"></div>
+                            
                         <div class="carrossel-depoimentos">
-                            <div class="owl-carousel owl-theme">
-                                <div class="item"><h4>1</h4></div>
-                                <div class="item"><h4>2</h4></div>
-                                <div class="item"><h4>3</h4></div>
+                            <div class="owl-carousel" id="cassossel2">
+                                <!-- Primeiro Depoimento -->
+                                <div class="item"><div class="banner-depoimento">
+                                    <div class="topo-depoimento">
+                                        <div class="img-pessoa1"></div>
+                                        <div class="textos-card">
+                                            <div class="nota">
+                                                <span>
+                                                    <img src="assets/images/Vector.webp" alt="estrela">
+                                                    10</span>
+                                            </div>
+                                            <div class="nome">
+                                                <span>Arnado Fernandes</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="descri">
+                                        <span>Serviço atencioso<br/> e completo.</span>
+                                    </div>
+                                </div></div>
+                                <!-- Segundo Depoimento -->
+                                <div class="item"><div class="banner-depoimento">
+                                    <div class="topo-depoimento">
+                                        <div class="img-pessoa2"></div>
+                                        <div class="textos-card">
+                                            <div class="nota">
+                                                <span>
+                                                    <img src="assets/images/Vector.webp" alt="estrela">
+                                                    9.7</span>
+                                            </div>
+                                            <div class="nome">
+                                                <span>Juliana Ferreira</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="descri">
+                                        <span>Estrutura completa<br/> tudo para veículo!</span>
+                                    </div>
+                                </div></div>
+                                <!-- Terceiro Depoimento -->
+                                <div class="item"><div class="banner-depoimento">
+                                    <div class="topo-depoimento">
+                                        <div class="img-pessoa3"></div>
+                                        <div class="textos-card">
+                                            <div class="nota">
+                                                <span>
+                                                    <img src="assets/images/Vector.webp" alt="estrela">
+                                                    10</span>
+                                            </div>
+                                            <div class="nome">
+                                                <span>Arnado Fernandes</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="descri">
+                                        <span>Fui muito bem <br/>atendido!</span>
+                                    </div>
+                                </div></div>
+                                <!-- Quarto Depoimento -->
+                                <div class="item"><div class="banner-depoimento">
+                                    <div class="topo-depoimento">
+                                        <div class="img-pessoa4"></div>
+                                        <div class="textos-card">
+                                            <div class="nota">
+                                                <span>
+                                                    <img src="assets/images/Vector.webp" alt="estrela">
+                                                    9.5</span>
+                                            </div>
+                                            <div class="nome">
+                                                <span>Arnado Fernandes</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="descri">
+                                        <span>Ótima localização,<br/> próximo de casa.</span>
+                                    </div>
+                                </div></div>
+                                <!-- Quinto Depoimento -->
+                                <div class="item"><div class="banner-depoimento">
+                                    <div class="topo-depoimento">
+                                        <div class="img-pessoa5"></div>
+                                        <div class="textos-card">
+                                            <div class="nota">
+                                                <span>
+                                                    <img src="assets/images/Vector.webp" alt="estrela">
+                                                    10</span>
+                                            </div>
+                                            <div class="nome">
+                                                <span>Arnado Fernandes</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="descri">
+                                        <span>Experiência incrível<br/> com funcionários.</span>
+                                    </div>
+                                </div></div>
                             </div>
                         </div>
-
-                        <div class="container-img">
-                            <div class="img-depoimentos">
-                            </div>
+       
                         </div>
+                        
                         <div class="ofertas" id="ofertas">
                             <div class="carro-oferta"></div>
                             <div class="ofertas-box">
@@ -174,11 +268,14 @@
                     </footer>
                 </div>
             </section>
+        </section>
     </main>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="assets/VenoBox-master/dist/venobox.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/script/inicio.js"></script>
     <script src="assets/script/inicio.js"></script>
 </body>
 </html>
