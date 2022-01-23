@@ -22,15 +22,36 @@ const conteudo =  document.getElementById('conteudo');
         zindex:99999,
         autoplay:true,
         autoplayTimeout:5000,
-        autoplayHoverPause:true,
+        autoplayHoverPause:false,
         smartSpeed:850,
         responsiveClass:true,
         responsive:{
-            0:{
-                stagePadding: 10,
+            320:{
+                stagePadding: 25,
             },
             321:{
                 stagePadding: 50,
+            },
+            360:{
+                stagePadding: 40,
+            },
+            375:{
+                stagePadding: 50,
+            },
+            412:{
+                stagePadding: 60,
+            },
+            460:{
+                stagePadding: 90,
+            },
+            768:{
+                stagePadding: 150,
+            },
+            1024:{
+                stagePadding: 225,
+            },
+            1920:{
+                stagePadding:450,
             }
         }
     });
@@ -50,36 +71,105 @@ const conteudo =  document.getElementById('conteudo');
             },
             321:{
                 stagePadding: 80,
+            },
+            460:{
+                stagePadding: 120,
+            },
+            768:{
+                stagePadding: 230,
             }
         }
     });
+
+    $('#cassossel3').owlCarousel({
+        items:3,
+        loop:true,
+        margin:10,
+        zindex:99999,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
+        smartSpeed:850,
+        responsiveClass:true,
+        responsive:{
+            1440 : {
+                items:5,
+                autoplay:false,
+                autoplayHoverPause:false,
+                autoplayTimeout:false
+            }
+        }
+    });
+
   });
 
 
 const button = document.getElementById('button-retangulo');
 
+const button_desk = document.getElementById('button-retangulo-2');
+
 
 const buttonredondo = document.getElementById('whatsapp-fixed');
 
+const tela =  window.innerWidth;
 
 document.addEventListener('scroll' , () => {
-
-
-   const posibutton =  button.getBoundingClientRect();
-
-   if(posibutton.y <= 837 && posibutton.y > 70 ){
-       buttonredondo.style.opacity='0'
-       button.style.opacity = '1'
-   }else{
-       buttonredondo.style.opacity ="1"
-       button.style.opacity = '0'
-   }
+    if(tela < 768){
+        const posibutton =  button.getBoundingClientRect();
+        if(posibutton.y <= 850 && posibutton.y > 70 ){
+            buttonredondo.style.opacity='0'
+            button.style.opacity = '1'
+        }else{
+            buttonredondo.style.opacity ="1"
+            button.style.opacity = '0'
+        }
+    }else if(tela >= 768 && tela < 1024){
+        const posibutton =  button.getBoundingClientRect();
+        if(posibutton.y <= 1050 && posibutton.y > 70 ){
+            buttonredondo.style.opacity='0'
+            button.style.opacity = '1'
+        }else{
+            buttonredondo.style.opacity ="1"
+            button.style.opacity = '0'
+        }
+    }else if(tela >= 1024 && tela < 1440){
+        const posibutton =  button_desk.getBoundingClientRect();
+        if(posibutton.y <= 1050 && posibutton.y > 70 ){
+            buttonredondo.style.opacity='0'
+            button_desk.style.opacity = '1'
+        }else{
+            buttonredondo.style.opacity ="1"
+            button_desk.style.opacity = '0'
+        }
+    }else if(tela >= 1440 && tela < 1920){
+        const posibutton =  button_desk.getBoundingClientRect();
+        if(posibutton.y <= 882 && posibutton.y > 70 ){
+            buttonredondo.style.opacity='0'
+            button_desk.style.opacity = '1'
+        }else{
+            buttonredondo.style.opacity ="1"
+            button_desk.style.opacity = '0'
+        }
+    }
+    else if(tela >= 1920){
+        const posibutton =  button_desk.getBoundingClientRect();
+        if(posibutton.y <= 950 && posibutton.y > 70 ){
+            buttonredondo.style.opacity='0'
+            button_desk.style.opacity = '1'
+        }else{
+            buttonredondo.style.opacity ="1"
+            button_desk.style.opacity = '0'
+        }
+    }
+  
 })
+
 
 
 AOS.init();
 
 new VenoBox({
+    loop:true,
     selector: '.my-image-links',
     numeration: true,
     infinigall: true,
@@ -88,25 +178,3 @@ new VenoBox({
     maxWidth: '80%',
     spinner: 'swing',
 });
-
-// const linksFake = document.querySelectorAll('#caixa');
-// const descCaixaContainer = document.getElementById('descContainer')
-// linksFake.forEach((linkFake) => {
-//   linkFake.addEventListener('click', (ev) => {
-//     const currentElemet = ev.currentTarget.getAttribute("data-caixa");
-//     const caixaSelector = currentElemet.split(' ')[1]
-//     const currentDesc = document.getElementById(currentElemet)
-//     descCaixaContainer.style.display = "flex";
-//     descCaixaContainer.style.opacity= "1";
-//     currentDesc.style.display = "flex";
-//     document.body.style.overflow = 'hidden'
-//     descCaixaContainer.addEventListener('click' , () => {
-//           descCaixaContainer.style.opacity= "0";
-//         setTimeout(() =>{
-//             descCaixaContainer.style.display = "none";
-//             currentDesc.style.display = "none";
-//         },500)
-//         document.body.style.overflow = 'auto'
-//     })
-//   })
-// })
